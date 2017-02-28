@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, target-densitydpi=medium-dpi,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />	<!--屏幕缩放-->
+	<title>Document</title>
+	<style type="text/css">
+	body{
+		background-color: #f3f3f3;
+	}
+	.main{
+		display: block;
+		margin:0 1.6em;
+		text-align: center;
+	}
+	.fill,.full{
+		width: 130px;
+		height: 130px;
+		border:1px solid #999;
+		margin: 5px;
+		/*background: url(bg.png) repeat;*/
+		/* float: left; */
+		background-color: white;
+		background-image:
+		linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc),
+		linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc);
+		background-size: 12px 12px;
+		background-position: 0 0, 6px 6px;
+		text-align: left;
+		display: inline-block;
+	}
+	</style>
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="jquery.showImg.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		$(".fill").showImg({
+			'type':'fill',//(填满-溢出隐藏)
+		});
+		$(".full").showImg({
+			'type':'full',//(完整显示-多余部分留白)
+		});
+	})
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="fill">
+			<img src="1.jpg"/>
+		</div>
+		<div class="full">
+			<img src="1.jpg"/>
+		</div>
+		<div class="fill">
+			<img src="2.jpg"/>
+		</div>
+		<div  class="full">
+			<img src="2.jpg"/>
+		</div>
+		<div class="fill">
+			<img src="3.jpg"/>
+		</div>
+		<div class="full">
+			<img src="3.jpg"/>
+		</div>
+		<div class="fill">
+			<img src="4.jpg"/>
+		</div>
+		<div  class="full">
+			<img src="4.jpg"/>
+		</div>
+	</div>
+</body>
+</html>
