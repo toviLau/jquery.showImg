@@ -1,4 +1,4 @@
-###简单介绍
+### 简单介绍
 这是一个jQuery的插件，它可将你的`<img />`根椐父盒子大小，自动适应在你的父盒里
 如图
 ![](https://raw.githubusercontent.com/coolfish6/jquery.showImg/master/demo.png)
